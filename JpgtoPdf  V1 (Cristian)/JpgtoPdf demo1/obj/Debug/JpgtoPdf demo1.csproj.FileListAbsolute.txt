@@ -1,0 +1,17 @@
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\JpgtoPdf demo1.exe.config
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\JpgtoPdf demo1.exe
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\JpgtoPdf demo1.pdb
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\PdfSharp.Charting.dll
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\PdfSharp.dll
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\PdfSharp.xml
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\PdfSharp.Charting.xml
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf demo1.csprojAssemblyReference.cache
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf_demo1.Form1.resources
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf_demo1.Properties.Resources.resources
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf demo1.csproj.GenerateResource.cache
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf demo1.csproj.CoreCompileInputs.cache
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf demo1.csproj.CopyComplete
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf demo1.exe
+C:\Users\badea\source\repos\JpgtoPdf demo1\JpgtoPdf demo1\obj\Debug\JpgtoPdf demo1.pdb
