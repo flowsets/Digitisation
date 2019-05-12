@@ -1,0 +1,7 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=cleanemailbody18606;AccountKey=glT3cSnnFUprbJo+6Q8xOf2feBnGJEmHLb5zG8FMBnHBlPIENh6HXZmYEmCZgAXs56eNFK1AQt3WhP849FzPdQ==;BlobEndpoint=https://cleanemailbody18606.blob.core.windows.net/;TableEndpoint=https://cleanemailbody18606.table.core.windows.net/;QueueEndpoint=https://cleanemailbody18606.queue.core.windows.net/;FileEndpoint=https://cleanemailbody18606.file.core.windows.net/",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+    }
+}
