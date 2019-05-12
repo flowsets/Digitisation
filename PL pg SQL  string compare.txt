@@ -1,0 +1,77 @@
+<!-- language: lang-sql -->
+
+create or replace function spt1.letterpairs(in p_str varchar) 
+returns varchar  as 
+$$
+declare
+
+    v_numpairs integer := length(p_str)-1;
+    v_pairs varchar[];
+
+begin
+
+    for i in 1 .. v_numpairs loop
+        v_pairs[i] := substr(p_str, i, 2);
+    end loop;
+
+    return v_pairs;
+
+end;
+$$ language 'plpgsql';
+
+--===================================================================
+
+create or replace function spt1.wordletterpairs(in p_str varchar) 
+returns varchar as
+$$
+declare
+    v_allpairs varchar[];
+    v_words varchar[];
+    v_pairsinword varchar[];
+begin
+    v_words := regexp_split_to_array(p_str, '[[:space:]]');
+
+    for i in 1 .. array_length(v_words, 1) loop
+        v_pairsinword := spt1.letterpairs(v_words[i]);
+
+        if v_pairsinword is not null then
+            for j in 1 .. array_length(v_pairsinword, 1) loop
+                v_allpairs := v_allpairs || v_pairsinword[j];
+            end loop;
+        end if;
+
+    end loop;
+
+
+    return v_allpairs;
+end;
+$$ language 'plpgsql';
+
+--===================================================================
+
+create or replace function spt1.arrayintersect(ANYARRAY, ANYARRAY)
+returns anyarray as 
+$$
+    select array(select unnest($1) intersect select unnest($2))
+$$ language 'sql';
+
+--===================================================================
+
+create or replace function spt1.comparestrings(in p_str1 varchar, in p_str2 varchar)
+returns float as
+$$
+declare
+    v_pairs1 varchar[];
+    v_pairs2 varchar[];
+    v_intersection integer;
+    v_union integer;
+begin
+    v_pairs1 := wordletterpairs(upper(p_str1));
+    v_pairs2 := wordletterpairs(upper(p_str2));
+    v_union := array_length(v_pairs1, 1) + array_length(v_pairs2, 1); 
+
+    v_intersection := array_length(arrayintersect(v_pairs1, v_pairs2), 1);
+
+    return (2.0 * v_intersection / v_union);
+end;
+$$ language 'plpgsql';
